@@ -76,3 +76,6 @@ tr:last-child td{border-bottom:0}
   .g3,.g4,.process{grid-template-columns:1fr 1fr}.g2{grid-template-columns:1fr}
 }
 @media (max-width:560px){.g3,.g4,.process{grid-template-columns:1fr}.persona{grid-template-columns:1fr}}
+
+/* Comfortable touch targets for the section links */
+.cs-nav .links a,.cs-nav .back{display:inline-flex;align-items:center;min-height:44px}
