@@ -26,7 +26,7 @@
 | **Client** | ICICI Bank |
 | **Product** | iMobile, revamped for iOS |
 | **Role** | Led the research and core UX design. A first major role as a UX designer. |
-| **Team** | Ravi, Salma Shaik, Priyanka Kane (PM) |
+| **Team** | Ravi Myneni (research and core UX), Salma Shaik, Priyanka Kane (PM) |
 | **Duration** | 6 months |
 | **Tools** | Figma, X-Mind, InVision |
 | **Methods** | Research, user interviews, UX design, prototype, test |
