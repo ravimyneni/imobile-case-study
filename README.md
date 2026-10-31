@@ -112,7 +112,7 @@ Fifteen interviews: eight ICICI customers and seven customers of other banks, pl
 | Persona | Goals | Pain points | Bars (out of 5) |
 |---|---|---|---|
 | **Shivnay Agarwal**, 39, data scientist. Responsible, practical, disciplined, cautious. | Instantly access all account details. Keep track of bills and pay them on time. | Hard to search for a transaction. No easy overview of all accounts. Irrelevant content. | Speed 3, Features 4, Help 3, Discover 3 |
-| **Athira Menon**, 25, fashion designer. Carefree, no dependants, tech-savvy, confident. | Track expenses. Save more to travel. Quickly view funds. Day-to-day transfers. | Can’t quickly view her balance. No way to track expenses. The app is not aesthetically pleasing. | Speed 5, Features 3, Help 1, Discover 3 |
+| **Athira Menon**, 25, fashion designer. Carefree, no dependents, tech-savvy, confident. | Track expenses. Save more to travel. Quickly view funds. Day-to-day transfers. | Can’t quickly view her balance. No way to track expenses. The app is not aesthetically pleasing. | Speed 5, Features 3, Help 1, Discover 3 |
 | **Hiten Shah**, 56, bank manager, retiring after 33 years. Content, not tech-savvy, jolly, weary. | Retire financially secure. Lead a hassle-free life. | Help is not easy to find. Not aware of investment opportunities. The app is not intuitive. | Speed 2, Features 2, Help 5, Discover 4 |
 
 Shivnay: “I like to stay up to date, be it new technology or bill payments.” Athira: “I want more control over my expenses and want to save more to spend on travel.” Hiten, in the wording on the card: “I’ve seen enough and more of life. Looking for some peace and quite after retirement.”
@@ -133,7 +133,7 @@ The old dashboard needed extra taps, wound the navigation around, and stretched 
 
 - The layout was stagnant.
 - Notifications and account updates were not visible on the dashboard.
-- “My Favourite Transaction,” not used often, was too prominent.
+- “My Favorite Transactions,” not used often, was too prominent.
 - The grid showed many services, not ordered by that person’s usage.
 - The profile area took 30 to 35 percent of the screen.
 - Balance checking, the most-used action, was not on the dashboard.
