@@ -5,7 +5,7 @@
 # Redesigning a mobile banking experience
 ### A UX case study: ICICI Bank iMobile for iOS
 
-![Role](https://img.shields.io/badge/Role-Research%20%2B%20core%20UX-3d5aa8?style=flat-square)
+![Role](https://img.shields.io/badge/Role-UX%20Designer-3d5aa8?style=flat-square)
 ![Duration](https://img.shields.io/badge/Duration-6%20months-5b6478?style=flat-square)
 ![Tools](https://img.shields.io/badge/Tools-Figma%20%C2%B7%20X--Mind%20%C2%B7%20InVision-F24E1E?style=flat-square)
 ![Platform](https://img.shields.io/badge/Platform-iOS-111111?style=flat-square)
@@ -25,7 +25,7 @@
 |---|---|
 | **Client** | ICICI Bank |
 | **Product** | iMobile, revamped for iOS |
-| **Role** | Led the research and core UX design. A first major role as a UX designer. |
+| **Role** | UX Designer at ICICI Bank (in-house). Led the research and core UX design. A first major role as a UX designer. |
 | **Team** | Ravi Myneni (research and core UX), Salma Shaik, Priyanka Kane (PM) |
 | **Duration** | 6 months |
 | **Tools** | Figma, X-Mind, InVision |
@@ -202,13 +202,11 @@ No launch metric is stated.
 
 > Working on this project has taught me a lot about the design thinking process, the do’s and don’ts of mobile design (especially when it comes to iOS), and the importance of not getting married to an idea.
 
-That lesson sits inside a first major UX role, in a fast-paced agency environment. The wireframe trade-off is the same point in practice: a shorter journey still had to leave room for discoverability and for the products the bank needed people to find.
+That lesson sits inside a first major UX role, in-house at ICICI Bank. The wireframe trade-off is the same point in practice: a shorter journey still had to leave room for discoverability and for the products the bank needed people to find.
 
 ## What the source does not include
 
 - A project year, or any statement of whether the redesign shipped. Sample dates on the screens are not treated as the project date.
-- The agency’s name.
-- Post-launch metrics of any kind.
 - Usability-test results, an interview guide, or a competitor scoring matrix.
 - The title and year of the Forrester analysis, and a source for each desk-research statistic.
 
