@@ -6,7 +6,7 @@
 ### A UX case study: ICICI Bank iMobile for iOS
 
 ![Role](https://img.shields.io/badge/Role-UX%20Designer-3d5aa8?style=flat-square)
-![Duration](https://img.shields.io/badge/Duration-6%20months-5b6478?style=flat-square)
+![Duration](https://img.shields.io/badge/Duration-11%20months-5b6478?style=flat-square)
 ![Tools](https://img.shields.io/badge/Tools-Figma%20%C2%B7%20X--Mind%20%C2%B7%20InVision-F24E1E?style=flat-square)
 ![Platform](https://img.shields.io/badge/Platform-iOS-111111?style=flat-square)
 ![Employer](https://img.shields.io/badge/Employer-ICICI%20Bank-c2410c?style=flat-square)
@@ -25,13 +25,13 @@
 |---|---|
 | **Employer** | ICICI Bank |
 | **Product** | iMobile, revamped for iOS |
-| **Role** | UX Designer at ICICI Bank (in-house). Led the research and core UX design. A first major role as a UX designer. |
+| **Role** | UX Designer at ICICI Bank. Led the research and core UX design. A first major role as a UX designer. |
 | **Team** | Ravi Myneni (research and core UX), Salma Shaik, Priyanka Kane (PM) |
-| **Duration** | 6 months |
+| **Duration** | 11 months |
 | **Tools** | Figma, X-Mind, InVision |
 | **Methods** | Research, user interviews, UX design, prototype, test |
 
-ICICI Bank is India’s largest private bank, with a presence in 16 countries. iMobile, launched in 2008 and described as India’s first mobile banking application, serves over 10 million users. The bank’s customers, a wider group, total over 100 million.
+ICICI Bank is India’s largest private bank, with a presence in 7+ countries. iMobile, launched in 2008 and described as India’s first mobile banking application, serves over 10 million users. The bank’s customers, a wider group, total over 62 million.
 
 The task was a user-centered iOS app that holds many banking jobs and still stays simple, accessible, and efficient for a diverse audience.
 
@@ -66,7 +66,7 @@ The same sections, with the screens, are on the [live site](https://ravimyneni.g
 
 ## Context
 
-In 2008 ICICI Bank launched iMobile. The case study calls it India’s first mobile banking application. The app now serves over 10 million users. The redesign had to consider the bank’s customers across age groups, totaling over 100 million. Those two figures describe different groups: app users, and bank customers.
+In 2008 ICICI Bank launched iMobile. The case study calls it India’s first mobile banking application. The app now serves over 10 million users. The redesign had to consider the bank’s customers across age groups, totaling over 62 million. Those two figures describe different groups: app users, and bank customers.
 
 <p align="center">
   <img src="11-original-imobile-2008-feature-phone.webp" alt="The 2008 iMobile menu on a feature phone: Bank Account, Credit Card, Other Accounts, mShop, Bill Pay, and iServices" width="240"/>
@@ -202,7 +202,7 @@ No launch metric is stated.
 
 > Working on this project has taught me a lot about the design thinking process, the do’s and don’ts of mobile design (especially when it comes to iOS), and the importance of not getting married to an idea.
 
-That lesson sits inside a first major UX role, in-house at ICICI Bank. The wireframe trade-off is the same point in practice: a shorter journey still had to leave room for discoverability and for the products the bank needed people to find.
+That lesson sits inside a first major UX role, at ICICI Bank. The wireframe trade-off is the same point in practice: a shorter journey still had to leave room for discoverability and for the products the bank needed people to find.
 
 ## What the source does not include
 
