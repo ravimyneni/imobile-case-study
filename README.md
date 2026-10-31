@@ -9,7 +9,7 @@
 ![Duration](https://img.shields.io/badge/Duration-6%20months-5b6478?style=flat-square)
 ![Tools](https://img.shields.io/badge/Tools-Figma%20%C2%B7%20X--Mind%20%C2%B7%20InVision-F24E1E?style=flat-square)
 ![Platform](https://img.shields.io/badge/Platform-iOS-111111?style=flat-square)
-![Client](https://img.shields.io/badge/Client-ICICI%20Bank-c2410c?style=flat-square)
+![Employer](https://img.shields.io/badge/Employer-ICICI%20Bank-c2410c?style=flat-square)
 
 **Ravi Myneni**
 
@@ -23,7 +23,7 @@
 
 | | |
 |---|---|
-| **Client** | ICICI Bank |
+| **Employer** | ICICI Bank |
 | **Product** | iMobile, revamped for iOS |
 | **Role** | UX Designer at ICICI Bank (in-house). Led the research and core UX design. A first major role as a UX designer. |
 | **Team** | Ravi Myneni (research and core UX), Salma Shaik, Priyanka Kane (PM) |
@@ -86,7 +86,7 @@ Stakeholder interviews covered how the app worked, where it was limited, and whi
 
 1. **Discover and explore** — secondary research, target audience, user interviews, personas, competitor analysis, heuristic review, exploring the problems.
 2. **Design** — information architecture, wireframing, prototyping.
-3. **Test and evaluate** — user testing, client feedback, refine and repeat.
+3. **Test and evaluate** — user testing, stakeholder feedback, refine and repeat.
 
 ## Secondary research
 
@@ -107,7 +107,7 @@ Top activities, longest bar first, with no count printed on the bars: balance ch
 
 ## User interviews and personas
 
-Fifteen interviews: eight ICICI customers and seven customers of other banks, plus client-provided data. Three personas came out of that.
+Fifteen interviews: eight ICICI customers and seven customers of other banks, plus the bank’s customer data. Three personas came out of that.
 
 | Persona | Goals | Pain points | Bars (out of 5) |
 |---|---|---|---|
@@ -184,7 +184,7 @@ From the wireframe annotations, not as a claim about what later shipped:
 
 ## Test, evaluate, repeat
 
-Testing was phase by phase. Wireframes were refined with the internal team and with the client before the interface was designed. Sessions used 8 to 10 internal people from various departments. The write-up does not list the tasks, the findings, or a success rate.
+Testing was phase by phase. Wireframes were refined with the design team and with the business stakeholders before the interface was designed. Sessions used 8 to 10 internal people from various departments. The write-up does not list the tasks, the findings, or a success rate.
 
 ## Final UI
 
