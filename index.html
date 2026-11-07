@@ -8,11 +8,11 @@
 <link rel="icon" href="favicon-16.png?v=rm1" type="image/png" sizes="16x16">
 <link rel="apple-touch-icon" href="apple-touch-icon.png?v=rm1" sizes="180x180">
 <title>iMobile — Case Study · Ravi Myneni</title>
-<meta name="description" content="ICICI Bank set out to revamp iMobile for iOS: a personal banking app with a wide set of tasks, built for people whose financial lives do not look alike.">
+<meta name="description" content="ICICI Bank set out to revamp iMobile for Android: a personal banking app with a wide set of tasks, built for people whose financial lives do not look alike.">
 <meta name="author" content="Ravi Myneni">
 <link rel="canonical" href="https://ravimyneni.github.io/imobile-case-study/">
 <meta property="og:title" content="Redesigning a mobile banking experience — ICICI Bank iMobile">
-<meta property="og:description" content="UX case study by Ravi Myneni. Research, interviews, and core UX design for the ICICI Bank iMobile iOS revamp.">
+<meta property="og:description" content="UX case study by Ravi Myneni. Research, interviews, and core UX design for the ICICI Bank iMobile Android revamp.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://ravimyneni.github.io/imobile-case-study/">
 <meta name="twitter:card" content="summary_large_image">
@@ -122,6 +122,79 @@ table.cmp tbody th{text-transform:none;letter-spacing:0;font-size:14px;color:var
   .metric-grid{grid-template-columns:1fr}
   .phone-frame{width:min(280px,100%)}
 }
+.cs-hero .lede,
+.cs-section .head p,
+.body p,
+.card p,
+.callout,
+.principle p,
+.persona-card .bio,
+.persona-card blockquote,
+td{
+  text-align:justify;
+  hyphens:auto;
+  text-wrap:pretty;
+  overflow-wrap:break-word;
+}
+h1,h2,h3,.cs-nav,.cs-nav a,.eyebrow,.tag,dt,th,.yn,.persona-label,.step b,.metric .v,.metric .n,.chips span{
+  text-align:start;
+  hyphens:manual;
+}
+@media (max-width:380px){
+  .cs-hero .lede,
+  .cs-section .head p,
+  .body p,
+  .card p,
+  .callout,
+  .principle p,
+  .persona-card .bio,
+  .persona-card blockquote,
+  td{text-align:start;hyphens:manual}
+}
+#design .process{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:12px;
+  width:calc(100% + 120px);
+  margin-left:-120px;
+}
+#design .process .step{
+  padding:18px 16px;
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  text-align:start;
+}
+#design .process .step b{white-space:nowrap;font-size:15px;line-height:1.2;margin-bottom:8px}
+#design .process .step span{text-align:start}
+.heuristic-layout{margin-top:64px}
+.heuristic-copy h3{margin-top:4px}
+.sources{font-size:14px;color:var(--muted);padding-left:20px}
+.sources li+li{margin-top:6px}
+.sources a{overflow-wrap:anywhere}
+@media (max-width:900px){
+  #design .process{
+    width:100%;
+    margin-left:0;
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    overflow:visible;
+    gap:10px;
+  }
+  #design .process .step{padding:16px 8px}
+  #design .process .step b{font-size:14px}
+}
+@media (max-width:640px){
+  #design .process{
+    grid-template-columns:repeat(5,minmax(156px,1fr));
+    overflow-x:auto;
+    padding-bottom:8px;
+    scroll-snap-type:x proximity;
+    gap:12px;
+  }
+  #design .process .step{scroll-snap-align:start;padding:16px 12px}
+  #design .process .step b{font-size:15px}
+}
 </style>
 </head>
 <body id="top">
@@ -129,18 +202,18 @@ table.cmp tbody th{text-transform:none;letter-spacing:0;font-size:14px;color:var
 <nav class="cs-nav"><div class="wrap">
   <a class="back" href="https://ravimyneni.github.io/">← All work</a>
   <div class="links">
-    <a href="#role">My Role</a><a href="#design">Design Process</a><a href="#problem">Problem</a><a href="#stakeholders">Stakeholders</a><a href="#users">End Users</a><a href="#research">Research</a><a href="#competitive">Competitive</a><a href="#personas">Personas</a><a href="#decisions">Decisions</a><a href="#prototype">Prototype</a><a href="#final">Final Design</a><a href="#outcome">Outcome</a><a href="#metrics">Metrics</a></div>
+    <a href="#role">My Role</a><a href="#design">Design Process</a><a href="#problem">Problem</a><a href="#stakeholders">Stakeholders</a><a href="#users">End Users</a><a href="#research">Research</a><a href="#competitive">Competitive</a><a href="#personas">Personas</a><a href="#decisions">Decisions</a><a href="#prototype">Prototype</a><a href="#final">Final Design</a><a href="#metrics">Metrics</a></div>
 </div></nav>
 
 <header class="cs-hero"><div class="wrap">
   <div class="eyebrow">Case Study · ICICI Bank</div>
   <h1>Redesigning a mobile banking experience</h1>
-  <p class="lede">ICICI Bank set out to revamp iMobile for iOS: a personal banking app with a wide set of tasks, built for people whose financial lives do not look alike. I worked to keep it simple, reachable, and still complete.</p>
+  <p class="lede">ICICI Bank set out to revamp iMobile for Android: a personal banking app with a wide set of tasks, built for people whose financial lives do not look alike. I worked to keep it simple, reachable, and still complete.</p>
   <dl class="meta">
     <div><dt>Role</dt><dd>UX Designer</dd></div>
     <div><dt>Timeline</dt><dd>11 months</dd></div>
     <div><dt>Team</dt><dd>Ravi, Suvarna, Salma Shaik, Priyanka Kane (PM)</dd></div>
-    <div><dt>Platform</dt><dd>iOS</dd></div>
+    <div><dt>Platform</dt><dd>Android</dd></div>
     <div><dt>Tools</dt><dd>Figma</dd></div>
   </dl>
   <figure class="cs-cover"><img src="61-final-ui-after-1.png" width="1092" height="647" alt="Three final screens labeled Log In, Dashboard, and Transactions. Log In greets Tanaji Ramchandra Ch., offers Swipe to see your balance, and has fields for user ID and password, plus Scan to Pay, Apply, Favourites, Insta Banking, Offers, and Calculators. Dashboard shows the savings balance and Top Activities. Transactions lists dated, tagged rows with Edit."></figure>
@@ -152,7 +225,7 @@ table.cmp tbody th{text-transform:none;letter-spacing:0;font-size:14px;color:var
   <div class="body">
     <div class="card"><p>I took on the research and core UX design for this project. It was my first major role as a UX designer. The learning curve was steep, but adapting to the pace and scope of a large banking team was a valuable experience. Through in-depth research, user analysis, and iterative design, I aligned with expectations and delivered a user-centered solution. Once I adapted to the speed and scope, the process became smoother, and I could focus on creating an impactful, user-friendly design.</p></div>
     <div class="grid g2">
-      <div class="card"><h3>Research</h3><p>I ran desk research, stakeholder interviews, and 15 user interviews. From that I built personas, a competitive look, and a heuristic review of the old dashboard.</p></div>
+      <div class="card"><h3>Research</h3><p>I ran desk research, stakeholder interviews, and 15 user interviews. From that I built four personas, a competitive look, and a heuristic review of the old dashboard. Public reviews from the Google Play Store and the Apple App Store sat alongside those interviews.</p></div>
       <div class="card"><h3>Core UX</h3><p>I designed the information architecture, wireframes, dashboard explorations, and the spending, upcoming-transaction, and history concepts. I prototyped in Figma, then refined the work with the team and the bank’s business stakeholders.</p></div>
     </div>
   </div>
@@ -163,14 +236,13 @@ table.cmp tbody th{text-transform:none;letter-spacing:0;font-size:14px;color:var
   <div class="body">
     <div class="process">
       <div class="step"><b>Discover</b><span>I did secondary research, defined the target audience, and ran stakeholder interviews and 15 user interviews. I reviewed the old dashboard and the problems in it.</span></div>
-      <div class="step"><b>Define</b><span>Three personas came from the interviews and the bank’s customer data. I compared competitors, then set four design objectives: frequent actions, findability, relevant content, and the phone’s own capabilities.</span></div>
+      <div class="step"><b>Define</b><span>Four personas came from the interviews and the bank’s customer data. I compared competitors, then set four design objectives: frequent actions, findability, relevant content, and the phone’s own capabilities.</span></div>
       <div class="step"><b>Ideate</b><span>I shaped the information architecture, bringing in Expenditure Analysis, Upcoming Transactions, and Discover. I explored several dashboard directions and concepts for the pages that carry the product.</span></div>
       <div class="step"><b>Prototype</b><span>I annotated wireframes for Login, Dashboard, Accounts, Expenditure Analysis, Fund Transfer, Bill Pay, Offers, and Help, and prototyped them in Figma.</span></div>
       <div class="step"><b>Test &amp; Deliver</b><span>User testing, stakeholder feedback, then refine and repeat. I refined wireframes with the design team and the business stakeholders before I designed the interface. Sessions used 8 to 10 internal people.</span></div>
     </div>
     <figure class="figure wide">
-      <a href="12-process-discover-design-test.webp"><img loading="lazy" src="12-process-discover-design-test.webp" width="1319" height="404" alt="Three-column process diagram. Discover and Explore lists Secondary Research, Target audience, User interviews, Personas, Competitor analysis, Heuristic review, and Exploring the problems. Design lists Information Architecture, Wireframing, and Prototyping. Test and Evaluate lists User Testing, Client Feedback, and Refine and repeat. Arrows connect the three headings."></a>
-      <figcaption>How I structured the work: Discover and Explore, Design, and Test and Evaluate. <a href="12-process-discover-design-test.webp">Full size</a></figcaption>
+      <img loading="lazy" src="12-process-discover-design-test.webp" width="1319" height="404" alt="Three-column process diagram. Discover and Explore lists Secondary Research, Target audience, User interviews, Personas, Competitor analysis, Heuristic review, and Exploring the problems. Design lists Information Architecture, Wireframing, and Prototyping. Test and Evaluate lists User Testing, Client Feedback, and Refine and repeat. Arrows connect the three headings.">
     </figure>
   </div>
 </div></section>
@@ -178,7 +250,7 @@ table.cmp tbody th{text-transform:none;letter-spacing:0;font-size:14px;color:var
 <section class="cs-section" id="problem"><div class="wrap">
   <div class="head"><div class="num">03</div><div><h2>Problem</h2><p>A comprehensive app pulls toward more features. A diverse audience pulls toward fewer steps, plainer language, and a home screen that does not assume everyone banks the same way.</p></div></div>
   <div class="body">
-    <p class="callout">ICICI Bank aimed to revamp its iMobile app for iOS, focusing on delivering an intuitive and delightful experience. My task was to design a comprehensive personal banking app that seamlessly integrates diverse functionalities while catering to a broad user base with varying financial needs. The challenge was to create a user-centric interface that balances simplicity, accessibility, and efficiency, ensuring the app remains both functional and engaging for a diverse audience.</p>
+    <p class="callout">ICICI Bank aimed to revamp its iMobile app for Android, focusing on delivering an intuitive and delightful experience. My task was to design a comprehensive personal banking app that seamlessly integrates diverse functionalities while catering to a broad user base with varying financial needs. The challenge was to create a user-centric interface that balances simplicity, accessibility, and efficiency, ensuring the app remains both functional and engaging for a diverse audience.</p>
     <p>ICICI Bank is India’s largest private bank, with a presence in 7+ countries. In 2008 it launched iMobile, described as India’s first mobile banking application. By the time of this project, iMobile served over 10 million users. The people I had to consider were wider than the app’s own users: the bank’s customers, across age groups, totaling over 62 million. Those are different groups.</p>
     <div class="grid g2">
       <figure class="figure phone">
@@ -198,7 +270,6 @@ table.cmp tbody th{text-transform:none;letter-spacing:0;font-size:14px;color:var
     <div class="heuristic-layout">
       <figure class="figure heuristic-shot">
         <img loading="lazy" src="29-heuristic-eval-old-dashboard.webp" width="457" height="953" alt="Previous ICICI Bank iMobile dashboard on a phone. A landscape photo header has the logo, a hamburger menu, search, a profile photo, and the greeting Hello, Arti Raut. An orange strip reads My Favorite Transactions. A three-by-three grid lists Accounts and Deposits, Fund Transfer, Recharge, Bill Payments, UPI, Cards Loans and Forex, Shopping and Offers, Investments and Insurance, and Services. No account balance is shown.">
-        <figcaption>The previous dashboard. No account balance is shown.</figcaption>
       </figure>
       <div class="heuristic-copy">
         <h3>Heuristic review</h3>
@@ -227,7 +298,7 @@ table.cmp tbody th{text-transform:none;letter-spacing:0;font-size:14px;color:var
       <tbody>
         <tr>
           <td>ICICI Bank business teams</td>
-          <td>An iOS revamp of iMobile that is intuitive and still complete for a broad customer base with unlike financial needs.</td>
+          <td>An Android revamp of iMobile that is intuitive and still complete for a broad customer base with unlike financial needs.</td>
           <td>I interviewed stakeholders on how the app worked, where it was limited, and which issues were already known. Their feedback sat inside the test-and-evaluate loop, before I treated the interface as final.</td>
         </tr>
         <tr>
@@ -269,15 +340,14 @@ table.cmp tbody th{text-transform:none;letter-spacing:0;font-size:14px;color:var
 </div></section>
 
 <section class="cs-section" id="research"><div class="wrap">
-  <div class="head"><div class="num">06</div><div><h2>Research Methods</h2><p>Desk research, fifteen interviews, a heuristic review, a competitive look, and short internal tests.</p></div></div>
+  <div class="head"><div class="num">06</div><div><h2>Research Methods</h2><p>Desk research, fifteen interviews, public app-store reviews, a heuristic review, a competitive look, and short internal tests.</p></div></div>
   <div class="body">
     <div class="grid g2">
       <div class="card"><span class="tag">Desk research</span><h3>Secondary research</h3><p>A quick Google search supplied the figures below, and the ranking of top activities. Balance checking is the longest bar.</p></div>
       <div class="card"><span class="tag">Interviews</span><h3>Fifteen user interviews</h3><p>Eight ICICI customers and seven customers of other banks. I asked how often people came to the app, where it hurt, and whether the most-used features could be found.</p></div>
+      <div class="card"><span class="tag">Reviews</span><h3>App Store Review Analysis</h3><p>I read publicly available reviews on the Google Play Store and the Apple App Store. The recurring usability issues, frustrations, feature requests, pain points, and customer expectations pointed to where mobile banking could do more. Those reviews sat alongside the fifteen interviews. They offered real-world qualitative insight without another round of direct interviews.</p></div>
       <div class="card"><span class="tag">Stakeholders</span><h3>Stakeholder interviews</h3><p>I asked how the app worked, where it was limited, and which issues were already known. Some Reserve Bank of India restrictions were fixed, and I left them outside the design space. The bank’s customer data also fed the personas.</p></div>
-      <div class="card"><span class="tag">Heuristics</span><h3>Heuristic evaluation</h3><p>I reviewed the old dashboard: extra taps, winding navigation, long forms. Eight findings are listed in Problem, beside that screen. I recommended less friction, more clarity, and simpler workflows.</p></div>
       <div class="card"><span class="tag">Competitive</span><h3>Competitor review</h3><p>I compared HDFC and SBI as direct competitors, and Paytm and Google Pay as payments apps people already used. I did not build a scoring matrix.</p></div>
-      <div class="card"><span class="tag">Testing</span><h3>Phase-by-phase sessions</h3><p>I refined wireframes with the design team and with the business stakeholders before I designed the interface. User sessions were quick and in the moment: 8 to 10 internal people, from various departments.</p></div>
     </div>
     <div class="table-scroll">
     <table>
@@ -311,15 +381,15 @@ table.cmp tbody th{text-transform:none;letter-spacing:0;font-size:14px;color:var
 </div></section>
 
 <section class="cs-section" id="competitive"><div class="wrap">
-  <div class="head"><div class="num">07</div><div><h2>Competitive Analysis</h2><p>No Indian bank app stood out to me as ideal in design, features, and usability, including HDFC and SBI. I widened the look to Paytm and Google Pay, and compared them on the jobs iMobile had to cover.</p></div></div>
+  <div class="head"><div class="num">07</div><div><h2>Competitive Analysis</h2><p>No Indian bank app stood out to me as ideal in design, features, and usability, including HDFC and SBI. I widened the look to Paytm and Google Pay, and compared them on the jobs iMobile had to cover. This reading is as of 2019.</p></div></div>
   <div class="body">
     <p>iMobile already held a lot, including UPI payments, loan applications, and card design. The gap was discoverability. Important functions were not easy to find, so I worked to make them easier to reach.</p>
-    <p>Each note comes from the home or the screen I reviewed. Where a screen did not show a capability, I left it as not shown rather than guessing.</p>
+    <p>Yes means a dated source from 2019 or earlier describes the capability. Partial means that source describes a limited version. No is used only when a dated source supports that the capability was unavailable. “Not on the screen I reviewed” means the project screen does not show it and I could not establish whether it existed in 2019. A blank spot on a screenshot is not treated as No.</p>
     <ul class="yn-legend" aria-label="Legend">
-      <li><span class="yn">Yes</span> part of the product</li>
-      <li><span class="yn partial">Partial</span> a limited version</li>
-      <li><span class="yn no">No</span> not part of the product</li>
-      <li><span class="yn na">Not shown</span> not on the screen I reviewed</li>
+      <li><span class="yn">Yes</span> available in 2019, from a dated source</li>
+      <li><span class="yn partial">Partial</span> a limited version in a dated source</li>
+      <li><span class="yn no">No</span> a dated source supports that it was unavailable</li>
+      <li><span class="yn na">Not on the screen I reviewed</span> not shown, and 2019 availability is not established</li>
     </ul>
     <p class="scroll-hint">Scroll the table sideways. The Capability column stays put.</p>
     <div class="table-scroll">
@@ -345,92 +415,107 @@ table.cmp tbody th{text-transform:none;letter-spacing:0;font-size:14px;color:var
         </tr>
         <tr>
           <th scope="row">UPI payments</th>
-          <td><span class="yn">Yes</span> In the services set, and on the old grid.</td>
-          <td><span class="yn">Yes</span> UPI sits on the home grid.</td>
-          <td><span class="yn">Yes</span> Pay, Collect, and a UPI registration step.</td>
-          <td><span class="yn">Yes</span> UPI on the home, with a cashback offer.</td>
-          <td><span class="yn">Yes</span> Pay a person. The screen was still branded Tez.</td>
+          <td><span class="yn">Yes</span> <a href="#src-icici-2018">ICICI, 12 Jun 2018</a></td>
+          <td><span class="yn">Yes</span> <a href="#src-indus-2019">Indus Net, Mar 2019</a></td>
+          <td><span class="yn">Yes</span> On the reviewed UPI screen. A separate 2019 article that names UPI was not found.</td>
+          <td><span class="yn">Yes</span> <a href="#src-paytm-2017">TechPP, 23 Oct 2017</a></td>
+          <td><span class="yn">Yes</span> <a href="#src-gpay-2018">Google, 28 Aug 2018</a></td>
         </tr>
         <tr>
           <th scope="row">QR scan and pay</th>
-          <td><span class="yn no">No</span> Not on the home grid I reviewed.</td>
-          <td><span class="yn no">No</span> Not on the home grid.</td>
-          <td><span class="yn na">Not shown</span> Not on the UPI screen I reviewed.</td>
-          <td><span class="yn na">Not shown</span> Not on the home I reviewed.</td>
-          <td><span class="yn na">Not shown</span> Not on the screen I reviewed.</td>
+          <td><span class="yn">Yes</span> <a href="#src-icici-2018">ICICI, 12 Jun 2018</a></td>
+          <td><span class="yn na">Not on the screen I reviewed</span></td>
+          <td><span class="yn na">Not on the screen I reviewed</span></td>
+          <td><span class="yn">Yes</span> <a href="#src-paytm-qr-2019">Mint, 29 Jul 2019</a></td>
+          <td><span class="yn">Yes</span> <a href="#src-indiatoday-2019">India Today, 15 Mar 2019</a></td>
         </tr>
         <tr>
           <th scope="row">Biometric login</th>
-          <td><span class="yn no">No</span> Not on the old dashboard. I added Touch ID and Face ID in the redesign.</td>
-          <td><span class="yn na">Not shown</span> Not on the home I reviewed.</td>
-          <td><span class="yn na">Not shown</span> Not on the screen I reviewed.</td>
-          <td><span class="yn na">Not shown</span> Not on the home I reviewed.</td>
-          <td><span class="yn na">Not shown</span> Not on the screen I reviewed.</td>
+          <td><span class="yn">Yes</span> <a href="#src-medianama-2017">MediaNama, Sep 2017</a></td>
+          <td><span class="yn na">Not on the screen I reviewed</span></td>
+          <td><span class="yn">Yes</span> <a href="#src-hdfc-2018">Mint, 27 Nov 2018</a></td>
+          <td><span class="yn">Yes</span> <a href="#src-paytm-2017">TechPP, 23 Oct 2017</a></td>
+          <td><span class="yn partial">Partial</span> <a href="#src-tez-2017">Google, 18 Sep 2017</a></td>
         </tr>
         <tr>
-          <th scope="row">Voice or Siri support</th>
-          <td><span class="yn partial">Partial</span> Search was on the old header. Voice input and Siri search came with the redesign.</td>
-          <td><span class="yn na">Not shown</span> Not on the home I reviewed.</td>
-          <td><span class="yn na">Not shown</span> Not on the screen I reviewed.</td>
-          <td><span class="yn na">Not shown</span> Not on the home I reviewed.</td>
-          <td><span class="yn na">Not shown</span> Not on the screen I reviewed.</td>
+          <th scope="row">Voice support</th>
+          <td><span class="yn">Yes</span> <a href="#src-icici-fy2019">ICICI annual report, FY2019</a></td>
+          <td><span class="yn">Yes</span> <a href="#src-indus-2019">Indus Net, Mar 2019</a></td>
+          <td><span class="yn na">Not on the screen I reviewed</span></td>
+          <td><span class="yn na">Not on the screen I reviewed</span></td>
+          <td><span class="yn na">Not on the screen I reviewed</span></td>
         </tr>
         <tr>
           <th scope="row">In-app search</th>
-          <td><span class="yn">Yes</span> Search sat on the old header, while many actions stayed in the hamburger.</td>
-          <td><span class="yn na">Not shown</span> Not on the home grid.</td>
-          <td><span class="yn na">Not shown</span> Not on the UPI screen.</td>
-          <td><span class="yn na">Not shown</span> Not on the home I reviewed.</td>
-          <td><span class="yn na">Not shown</span> Not on the screen I reviewed.</td>
+          <td><span class="yn">Yes</span> Search is on the previous dashboard in this case.</td>
+          <td><span class="yn na">Not on the screen I reviewed</span></td>
+          <td><span class="yn na">Not on the screen I reviewed</span></td>
+          <td><span class="yn na">Not on the screen I reviewed</span></td>
+          <td><span class="yn na">Not on the screen I reviewed</span></td>
         </tr>
         <tr>
           <th scope="row">Bill pay and recharge</th>
-          <td><span class="yn">Yes</span> Bill Payments and Recharge are both in the grid.</td>
-          <td><span class="yn">Yes</span> Top Up and Recharge, and Bill Payments.</td>
-          <td><span class="yn na">Not shown</span> Not on the UPI screen I reviewed.</td>
-          <td><span class="yn">Yes</span> Billers such as mobile, DTH, electricity, and petrol.</td>
-          <td><span class="yn na">Not shown</span> The screen is for paying a person.</td>
+          <td><span class="yn">Yes</span> <a href="#src-icici-2018">ICICI, 12 Jun 2018</a></td>
+          <td><span class="yn">Yes</span> Bill Payments is on the reviewed home.</td>
+          <td><span class="yn">Yes</span> <a href="#src-hdfc-2018">Mint, 27 Nov 2018</a></td>
+          <td><span class="yn">Yes</span> <a href="#src-paytm-2017">TechPP, 23 Oct 2017</a></td>
+          <td><span class="yn">Yes</span> <a href="#src-gpay-2018">Google, 28 Aug 2018</a></td>
         </tr>
         <tr>
           <th scope="row">Account and card management</th>
-          <td><span class="yn">Yes</span> Accounts, cards, loans, and forex. Balance was still missing from home.</td>
-          <td><span class="yn">Yes</span> My Accounts, with deposits and transfers beside it.</td>
-          <td><span class="yn partial">Partial</span> Balance enquiry, add account, and history, on a UPI-led screen.</td>
-          <td><span class="yn partial">Partial</span> Passbook and add money, not the full account relationship.</td>
-          <td><span class="yn no">No</span> A payments home, not accounts and cards.</td>
+          <td><span class="yn">Yes</span> <a href="#src-icici-2018">ICICI, 12 Jun 2018</a></td>
+          <td><span class="yn">Yes</span> My Accounts is on the reviewed home.</td>
+          <td><span class="yn">Yes</span> <a href="#src-hdfc-2018">Mint, 27 Nov 2018</a></td>
+          <td><span class="yn partial">Partial</span> Passbook on the reviewed home, not the full bank relationship.</td>
+          <td><span class="yn partial">Partial</span> <a href="#src-indiatoday-2019">India Today, 15 Mar 2019</a></td>
         </tr>
         <tr>
           <th scope="row">Investments</th>
-          <td><span class="yn">Yes</span> Investments and Insurance, easy to miss in the grid.</td>
-          <td><span class="yn partial">Partial</span> e-Deposits on the home grid, not a wider portfolio.</td>
-          <td><span class="yn na">Not shown</span> Not on the screen I reviewed.</td>
-          <td><span class="yn partial">Partial</span> Gold sits among the billers, not a portfolio.</td>
-          <td><span class="yn no">No</span> Not part of this payments home.</td>
+          <td><span class="yn">Yes</span> <a href="#src-icici-2018">ICICI, 12 Jun 2018</a></td>
+          <td><span class="yn partial">Partial</span> e-Deposits on the reviewed home. Mutual funds in <a href="#src-indus-2019">Indus Net, Mar 2019</a>, are on YONO, a different app.</td>
+          <td><span class="yn partial">Partial</span> <a href="#src-hdfc-2018">Mint, 27 Nov 2018</a></td>
+          <td><span class="yn partial">Partial</span> <a href="#src-paytm-2017">TechPP, 23 Oct 2017</a></td>
+          <td><span class="yn na">Not on the screen I reviewed</span></td>
         </tr>
         <tr>
           <th scope="row">Personalization of the home screen</th>
-          <td><span class="yn no">No</span> A fixed grid, not ordered by the person. Favorite transactions took space people rarely used.</td>
-          <td><span class="yn no">No</span> A fixed 3 by 3 under a welcome header.</td>
-          <td><span class="yn no">No</span> A fixed list of UPI actions.</td>
-          <td><span class="yn no">No</span> A fixed payments home.</td>
-          <td><span class="yn no">No</span> A fixed grid of people.</td>
+          <td><span class="yn">Yes</span> <a href="#src-icici-2018">ICICI, 12 Jun 2018</a></td>
+          <td><span class="yn na">Not on the screen I reviewed</span></td>
+          <td><span class="yn">Yes</span> <a href="#src-hdfc-2018">Mint, 27 Nov 2018</a></td>
+          <td><span class="yn na">Not on the screen I reviewed</span></td>
+          <td><span class="yn na">Not on the screen I reviewed</span></td>
         </tr>
         <tr>
           <th scope="row">Navigation depth to common tasks</th>
-          <td>Deep. A hamburger hid actions, balance was not on the home screen, and the profile area took 30 to 35 percent of the screen.</td>
-          <td>Shallower for the nine home actions. Usability still did not stand out.</td>
-          <td>UPI tasks are up front. Wider banking is not on this screen.</td>
-          <td>Shallow for pay and bills. Not built to hold the full bank relationship.</td>
-          <td>Shallow for paying someone.</td>
+          <td>On the reviewed previous home, a hamburger hid actions and balance was not shown.</td>
+          <td>On the reviewed home, nine actions sit on the first grid.</td>
+          <td>On the reviewed screen, UPI tasks are up front.</td>
+          <td>On the reviewed home, pay and bills are shallow.</td>
+          <td>On the reviewed screen, paying a person is shallow.</td>
         </tr>
       </tbody>
     </table>
     </div>
+    <p>Navigation depth describes the screens in this case. It is not a 2019 measurement. These items stay unresolved, because a 2019 source was not found: SBI Anywhere QR scan, biometric login, in-app search, and home personalization. A <a href="#src-sbi-bio-2018">Times of India report, 24 Aug 2018</a>, says SBI biometric login was still being procured. Also unresolved: HDFC QR scan, voice, and in-app search; Paytm voice, in-app search, and home personalization; Google Pay voice, in-app search, investments, and whether the contacts home was personalized.</p>
+    <h3>Sources</h3>
+    <ol class="sources">
+      <li id="src-icici-2018"><a href="https://www.icici.bank.in/about-us/article/news-icici-bank-completes-20-years-of-digital-banking-journey-the-bank-launches-revamped-imobile-with-many-industryfirst-features-20180612123039494">ICICI Bank, 12 June 2018</a>. Revamp note: UPI and bill payments, scan a QR code, voice-command transfer, Discover with spend patterns and suggestions, mutual-fund registration, and balance check.</li>
+      <li id="src-icici-fy2019"><a href="https://www.icicibank.com/ms/annual-report-microsite/strategic-focus-areas-for-business.html">ICICI Bank annual report, fiscal 2019</a>. iMobile revamped in fiscal 2019, with voice-command transfer and Discover.</li>
+      <li id="src-medianama-2017"><a href="https://www.medianama.com/2017/09/223-icici-bank-mobile-banking-fingerprint/">MediaNama, September 2017</a>. Android fingerprint login on iMobile.</li>
+      <li id="src-indus-2019"><a href="https://www.indusnet.co.in/site/wp-content/uploads/2019/03/Comparison-of-Mobile-Applications-of-Top-Indian-Banks.pdf">Indus Net, March 2019</a>. Comparison PDF: SBI Anywhere voice-assisted balance and transfer, and UPI trouble reports. Mutual funds are described on YONO.</li>
+      <li id="src-sbi-bio-2018"><a href="https://timesofindia.indiatimes.com/business/india-business/sbi-apps-to-have-multiple-modes-of-biometric-id/articleshow/65522501.cms">Times of India, 24 August 2018</a>. SBI said biometric login would come soon. The vendor was not final, so this is not evidence it was missing for all of 2019.</li>
+      <li id="src-hdfc-2018"><a href="https://www.livemint.com/Companies/r5aWmP55eR1U5uLSNnaCCI/HDFC-Bank-launches-new-mobile-banking-app-Top-5-features.html">Mint, 27 November 2018</a>. HDFC next-gen app: fingerprint and face login, bill notifications, Pay / Save / Invest, an asset snapshot, and personalized display. <a href="https://www.thehindubusinessline.com/money-and-banking/upgraded-version-of-hdfc-banks-mobile-banking-app-launched/article26571326.ece">BusinessLine, 18 March 2019</a>, reports the upgraded app was relaunched.</li>
+      <li id="src-paytm-2017"><a href="https://techpp.com/2017/10/23/paytm-tips-tricks/">TechPP, 23 October 2017</a>. Paytm fingerprint lock, UPI, bills and recharge, and digital gold.</li>
+      <li id="src-paytm-qr-2019"><a href="https://www.livemint.com/companies/start-ups/how-paytm-qr-codes-revolutionised-digital-payments-in-india-1564401824780.html">Mint, 29 July 2019</a>. Paytm QR, launched in 2015 and still in wide use.</li>
+      <li id="src-gpay-2018"><a href="https://india.googleblog.com/2018/08/google-pay-next-step-in-tez-journey.html">Google India blog, 28 August 2018</a>. Google Pay, formerly Tez, on UPI, with recharge and electricity-bill payment.</li>
+      <li id="src-tez-2017"><a href="https://india.googleblog.com/2017/09/introducing-tez-mobile-payments-and.html">Google India blog, 18 September 2017</a>. Tez access used the phone lock, which could be a fingerprint, plus a Google PIN.</li>
+      <li id="src-indiatoday-2019"><a href="https://www.indiatoday.in/information/story/how-to-use-google-pay-a-complete-guide-1478818-2019-03-15">India Today, 15 March 2019</a>. Google Pay QR scan, screen lock, and stored cards. This is not a full bank-account app.</li>
+    </ol>
   </div>
 </div></section>
 
 <section class="cs-section" id="personas"><div class="wrap">
-  <div class="head"><div class="num">08</div><div><h2>User Personas</h2><p>Three portraits came from fifteen interviews and the bank’s customer data. I added a fourth so a small-business owner is in the set. Scroll sideways to meet all four.</p></div></div>
+  <div class="head"><div class="num">08</div><div><h2>User Personas</h2><p>Four portraits came from fifteen interviews and the bank’s customer data. Scroll sideways to meet all four.</p></div></div>
   <div class="body">
     <div class="persona-wrap">
     <div class="persona-scroller" tabindex="0" aria-label="Four user personas">
@@ -582,33 +667,25 @@ table.cmp tbody th{text-transform:none;letter-spacing:0;font-size:14px;color:var
   <div class="head"><div class="num">09</div><div><h2>Design Decisions</h2><p>The objectives answer the review directly. On the annotated wireframes I held two jobs at once: a short path for the task, and a way for the bank’s other products to stay findable.</p></div></div>
   <div class="body">
     <div class="principle" id="confidence">
-      <span class="tag">Design principle</span>
+      <span class="tag">My Design Principle</span>
       <h3>Design for confidence, not just completion.</h3>
       <p>In a banking app, finishing a task is not enough. People have to trust that it worked. Every money moment is designed to reassure: a clear confirmation, a status you can always see, and security cues where money moves, so customers feel confident and secure each time they use iMobile.</p>
-      <p>That is why the balance sits behind “tap to view balance,” sign-in uses fingerprint or Face ID, service requests carry a status strip, and a fixed deposit shows the money growing.</p>
+      <p>That is why the balance sits behind “tap to view balance,” sign-in uses fingerprint or face unlock, service requests carry a status strip, and a fixed deposit shows the money growing.</p>
     </div>
     <div class="grid g2">
       <div class="card"><h3>Quick access</h3><p>I put frequently performed actions within quick reach. Balance checking belongs up front. Top Activities is filled from what that person does most often.</p></div>
       <div class="card"><h3>Discoverability</h3><p>I made less common features quick to find. Discover introduces banking tools and services the person has not used.</p></div>
       <div class="card"><h3>Relevant content</h3><p>I show content that is relevant to that person. The layout leans on the primary savings relationship. Research noted in the wireframes suggests most people hold a single product, usually a savings account.</p></div>
-      <div class="card"><h3>Use the phone</h3><p>I used what the phone already offers. Search accepts voice input. Login can be fingerprint or Face ID.</p></div>
+      <div class="card"><h3>Use the phone</h3><p>I used what the phone already offers. Search accepts voice input. Login can be fingerprint or face unlock.</p></div>
     </div>
-    <figure class="figure wide">
-      <a href="30-design-objectives-icons.webp"><img loading="lazy" src="30-design-objectives-icons.webp" width="1323" height="328" alt="Four orange line icons in a row on a black background: a person running, a magnifying glass, four circles joined by lines, and a simplified face inside a camera-style frame."></a>
-      <figcaption>Four objectives: quick access, discoverability, relevant content, and using the phone. <a href="30-design-objectives-icons.webp">Full size</a></figcaption>
-    </figure>
     <p>Some concepts made the journey simpler and, in doing that, worked against the business goals of feature discoverability and cross-selling financial products. A screen that only serves the task hides the rest of the bank. A screen that only promotes products makes the task longer. I made that trade on the wireframes, page by page.</p>
     <div class="grid g2">
-      <div class="card"><h3>Before login</h3><p>I let notifications be reached without logging in, and a returning user can see the balance with a swipe, still without a session. Actions that do not need a login have a place. Fingerprint and Face ID are how someone signs in.</p></div>
+      <div class="card"><h3>Before login</h3><p>I let notifications be reached without logging in, and a returning user can see the balance with a swipe, still without a session. Actions that do not need a login have a place. Fingerprint and face unlock are how someone signs in.</p></div>
       <div class="card"><h3>Balance, search, and help</h3><p>I put the account balance up front, behind “tap to view balance,” for privacy. Not everyone wants that number large on an open screen. Search is visible, typed or spoken, because of how many features ICICI has. Help stays within reach. I favored the primary savings relationship over a menu of every product.</p></div>
       <div class="card"><h3>Discover</h3><p>I split Discover into five parts: an upcoming-transaction feed predicted from the credit cycle and usage, service requests such as a new ATM card or a cheque book, a spending overview, offers, and tips. Tips are also a place to cross-sell, a credit card for example, without a separate detour. On the home screen, Discover sits beside Top Activities.</p></div>
       <div class="card"><h3>Clearer narration</h3><p>Transaction narration was vague and inconsistent, so people could not tell what a line in their history actually was. I carried clearer narration through the spending views, the upcoming list, and the history itself. If the bank’s description is unclear, the tag is the person’s way to name it.</p></div>
       <div class="card"><h3>Money in and money out</h3><p>I built upcoming transactions from the last few months of payments. The spending overview is the month’s credits and debits, with earlier months, a custom period, and a swipe into categories. Service requests show what is open or recently closed, with a status strip and a tap for the detail.</p></div>
-      <div class="card"><h3>Accounts</h3><p>I gave new and returning customers different landings, with a help icon and persuasive messages in place of a static block. Several savings accounts are a swipe apart. Account details can be shared, and the person chooses which details. Transactions filter by type, mode, time, amount, cheque, and history up to three years. A bill or a transfer can start from the account. Transactions can be bookmarked, the category edited, and the communication address updated from home. Dates are clearly separated.</p></div>
-      <div class="card"><h3>Fixed deposits</h3><p>I drew the deposit so the money can be seen growing, meant to reassure and to lower withdrawal. FD advice sits with the account, and applying for another deposit includes an explanation of the benefits.</p></div>
       <div class="card"><h3>Bills and feedback</h3><p>I made upcoming bills visible together. Categories follow how often that person pays them. Auto Pay is offered, and a biller can be added, edited, or removed. Feedback is a single tap. I used emoji rather than a scale from 1 to 10, and leftover questions can be answered now or later.</p></div>
-      <div class="card"><h3>Services, offers, and cards</h3><p>I highlighted what is used most in the services list, and the list can be searched. Offers that are already approved for that person sit on the first fold, in clear categories. Some are contextual to place and time, with distance shown, and the category can change without scrolling back to the top. A voucher’s amount and quantity are set in one gesture, and a coupon code copies on tap. For an Expressions card, the person picks a category and a design, sees it large, and swipes to the next design.</p></div>
-      <div class="card"><h3>A home screen with three jobs</h3><p>The dashboard is the gateway. I needed it to show the accounts a person holds, open a way into more features and products, and still put the actions they already repeat within reach. A further band of analytics, suggestions, and tips is there so the bank feels as if it has been paying attention.</p></div>
     </div>
   </div>
 </div></section>
@@ -741,20 +818,8 @@ table.cmp tbody th{text-transform:none;letter-spacing:0;font-size:14px;color:var
   </div>
 </div></section>
 
-<section class="cs-section" id="outcome"><div class="wrap">
-  <div class="head"><div class="num">12</div><div><h2>Outcome</h2><p>I designed a banking app where the primary tasks are seamless and the features people use less often are still easy to find.</p></div></div>
-  <div class="body">
-    <p class="callout">The end product was what I envisioned: a beautiful, functional banking app, one of its kind in India. It lets a person perform the primary tasks seamlessly, and it makes the less common features discoverable when they are needed.</p>
-    <div class="card"><h3>What the app had to do</h3><p>Primary tasks are seamless: the balance, the statement, a transfer, a bill. Features that are not used every day can still be found, through search, Discover, and a services list that calls out what that person uses most.</p></div>
-    <h3>What I learned</h3>
-    <div class="card"><p>Working on this project has taught me a lot about the design thinking process, the do’s and don’ts of mobile design (especially when it comes to iOS), and the importance of not getting married to an idea.</p></div>
-    <p>That lesson came in my first major UX role. The learning curve was steep. Once the speed and the scope were familiar, I could settle on a design that was user-centered and user-friendly.</p>
-    <p>The wireframe trade-off is the same lesson in practice. A journey that was ideal for the user still had to make room for discoverability and for the products the bank needed people to find. Holding both, rather than defending the first concept, is the decision I kept coming back to.</p>
-  </div>
-</div></section>
-
 <section class="cs-section" id="metrics"><div class="wrap">
-  <div class="head"><div class="num">13</div><div><h2>Metrics</h2><p>Results of the redesign, plus figures for the bank, the Forrester analysis, and the research on this project.</p></div></div>
+  <div class="head"><div class="num">12</div><div><h2>Metrics</h2><p>Results of the redesign, plus figures for the bank, the Forrester analysis, and the research on this project.</p></div></div>
   <div class="body">
     <div class="metric-grid">
       <div class="metric"><div class="v">15%</div><div class="l">Increase in conversion rates after the redesign.</div><div class="n">Result</div></div>
