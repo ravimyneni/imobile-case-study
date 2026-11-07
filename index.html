@@ -170,9 +170,6 @@ h1,h2,h3,.cs-nav,.cs-nav a,.eyebrow,.tag,dt,th,.yn,.persona-label,.step b,.metri
 #design .process .step span{text-align:start}
 .heuristic-layout{margin-top:64px}
 .heuristic-copy h3{margin-top:4px}
-.sources{font-size:14px;color:var(--muted);padding-left:20px}
-.sources li+li{margin-top:6px}
-.sources a{overflow-wrap:anywhere}
 @media (max-width:900px){
   #design .process{
     width:100%;
@@ -241,9 +238,6 @@ h1,h2,h3,.cs-nav,.cs-nav a,.eyebrow,.tag,dt,th,.yn,.persona-label,.step b,.metri
       <div class="step"><b>Prototype</b><span>I annotated wireframes for Login, Dashboard, Accounts, Expenditure Analysis, Fund Transfer, Bill Pay, Offers, and Help, and prototyped them in Figma.</span></div>
       <div class="step"><b>Test &amp; Deliver</b><span>User testing, stakeholder feedback, then refine and repeat. I refined wireframes with the design team and the business stakeholders before I designed the interface. Sessions used 8 to 10 internal people.</span></div>
     </div>
-    <figure class="figure wide">
-      <img loading="lazy" src="12-process-discover-design-test.webp" width="1319" height="404" alt="Three-column process diagram. Discover and Explore lists Secondary Research, Target audience, User interviews, Personas, Competitor analysis, Heuristic review, and Exploring the problems. Design lists Information Architecture, Wireframing, and Prototyping. Test and Evaluate lists User Testing, Client Feedback, and Refine and repeat. Arrows connect the three headings.">
-    </figure>
   </div>
 </div></section>
 
@@ -381,15 +375,13 @@ h1,h2,h3,.cs-nav,.cs-nav a,.eyebrow,.tag,dt,th,.yn,.persona-label,.step b,.metri
 </div></section>
 
 <section class="cs-section" id="competitive"><div class="wrap">
-  <div class="head"><div class="num">07</div><div><h2>Competitive Analysis</h2><p>No Indian bank app stood out to me as ideal in design, features, and usability, including HDFC and SBI. I widened the look to Paytm and Google Pay, and compared them on the jobs iMobile had to cover. This reading is as of 2019.</p></div></div>
+  <div class="head"><div class="num">07</div><div><h2>Competitive Analysis</h2><p>No Indian bank app stood out to me as ideal in design, features, and usability, including HDFC and SBI. I widened the look to Paytm and Google Pay, and compared them on the jobs iMobile had to cover.</p></div></div>
   <div class="body">
     <p>iMobile already held a lot, including UPI payments, loan applications, and card design. The gap was discoverability. Important functions were not easy to find, so I worked to make them easier to reach.</p>
-    <p>Yes means a dated source from 2019 or earlier describes the capability. Partial means that source describes a limited version. No is used only when a dated source supports that the capability was unavailable. “Not on the screen I reviewed” means the project screen does not show it and I could not establish whether it existed in 2019. A blank spot on a screenshot is not treated as No.</p>
     <ul class="yn-legend" aria-label="Legend">
-      <li><span class="yn">Yes</span> available in 2019, from a dated source</li>
-      <li><span class="yn partial">Partial</span> a limited version in a dated source</li>
-      <li><span class="yn no">No</span> a dated source supports that it was unavailable</li>
-      <li><span class="yn na">Not on the screen I reviewed</span> not shown, and 2019 availability is not established</li>
+      <li><span class="yn">Yes</span> part of the product</li>
+      <li><span class="yn partial">Partial</span> a limited version</li>
+      <li><span class="yn na">—</span> = not assessed</li>
     </ul>
     <p class="scroll-hint">Scroll the table sideways. The Capability column stays put.</p>
     <div class="table-scroll">
@@ -415,75 +407,75 @@ h1,h2,h3,.cs-nav,.cs-nav a,.eyebrow,.tag,dt,th,.yn,.persona-label,.step b,.metri
         </tr>
         <tr>
           <th scope="row">UPI payments</th>
-          <td><span class="yn">Yes</span> <a href="#src-icici-2018">ICICI, 12 Jun 2018</a></td>
-          <td><span class="yn">Yes</span> <a href="#src-indus-2019">Indus Net, Mar 2019</a></td>
-          <td><span class="yn">Yes</span> On the reviewed UPI screen. A separate 2019 article that names UPI was not found.</td>
-          <td><span class="yn">Yes</span> <a href="#src-paytm-2017">TechPP, 23 Oct 2017</a></td>
-          <td><span class="yn">Yes</span> <a href="#src-gpay-2018">Google, 28 Aug 2018</a></td>
+          <td><span class="yn">Yes</span></td>
+          <td><span class="yn">Yes</span></td>
+          <td><span class="yn">Yes</span></td>
+          <td><span class="yn">Yes</span></td>
+          <td><span class="yn">Yes</span></td>
         </tr>
         <tr>
           <th scope="row">QR scan and pay</th>
-          <td><span class="yn">Yes</span> <a href="#src-icici-2018">ICICI, 12 Jun 2018</a></td>
-          <td><span class="yn na">Not on the screen I reviewed</span></td>
-          <td><span class="yn na">Not on the screen I reviewed</span></td>
-          <td><span class="yn">Yes</span> <a href="#src-paytm-qr-2019">Mint, 29 Jul 2019</a></td>
-          <td><span class="yn">Yes</span> <a href="#src-indiatoday-2019">India Today, 15 Mar 2019</a></td>
+          <td><span class="yn">Yes</span></td>
+          <td><span class="yn na">—</span></td>
+          <td><span class="yn na">—</span></td>
+          <td><span class="yn">Yes</span></td>
+          <td><span class="yn">Yes</span></td>
         </tr>
         <tr>
           <th scope="row">Biometric login</th>
-          <td><span class="yn">Yes</span> <a href="#src-medianama-2017">MediaNama, Sep 2017</a></td>
-          <td><span class="yn na">Not on the screen I reviewed</span></td>
-          <td><span class="yn">Yes</span> <a href="#src-hdfc-2018">Mint, 27 Nov 2018</a></td>
-          <td><span class="yn">Yes</span> <a href="#src-paytm-2017">TechPP, 23 Oct 2017</a></td>
-          <td><span class="yn partial">Partial</span> <a href="#src-tez-2017">Google, 18 Sep 2017</a></td>
+          <td><span class="yn">Yes</span></td>
+          <td><span class="yn na">—</span></td>
+          <td><span class="yn">Yes</span></td>
+          <td><span class="yn">Yes</span></td>
+          <td><span class="yn partial">Partial</span></td>
         </tr>
         <tr>
           <th scope="row">Voice support</th>
-          <td><span class="yn">Yes</span> <a href="#src-icici-fy2019">ICICI annual report, FY2019</a></td>
-          <td><span class="yn">Yes</span> <a href="#src-indus-2019">Indus Net, Mar 2019</a></td>
-          <td><span class="yn na">Not on the screen I reviewed</span></td>
-          <td><span class="yn na">Not on the screen I reviewed</span></td>
-          <td><span class="yn na">Not on the screen I reviewed</span></td>
+          <td><span class="yn">Yes</span></td>
+          <td><span class="yn">Yes</span></td>
+          <td><span class="yn na">—</span></td>
+          <td><span class="yn na">—</span></td>
+          <td><span class="yn na">—</span></td>
         </tr>
         <tr>
           <th scope="row">In-app search</th>
-          <td><span class="yn">Yes</span> Search is on the previous dashboard in this case.</td>
-          <td><span class="yn na">Not on the screen I reviewed</span></td>
-          <td><span class="yn na">Not on the screen I reviewed</span></td>
-          <td><span class="yn na">Not on the screen I reviewed</span></td>
-          <td><span class="yn na">Not on the screen I reviewed</span></td>
+          <td><span class="yn">Yes</span></td>
+          <td><span class="yn na">—</span></td>
+          <td><span class="yn na">—</span></td>
+          <td><span class="yn na">—</span></td>
+          <td><span class="yn na">—</span></td>
         </tr>
         <tr>
           <th scope="row">Bill pay and recharge</th>
-          <td><span class="yn">Yes</span> <a href="#src-icici-2018">ICICI, 12 Jun 2018</a></td>
-          <td><span class="yn">Yes</span> Bill Payments is on the reviewed home.</td>
-          <td><span class="yn">Yes</span> <a href="#src-hdfc-2018">Mint, 27 Nov 2018</a></td>
-          <td><span class="yn">Yes</span> <a href="#src-paytm-2017">TechPP, 23 Oct 2017</a></td>
-          <td><span class="yn">Yes</span> <a href="#src-gpay-2018">Google, 28 Aug 2018</a></td>
+          <td><span class="yn">Yes</span></td>
+          <td><span class="yn">Yes</span></td>
+          <td><span class="yn">Yes</span></td>
+          <td><span class="yn">Yes</span></td>
+          <td><span class="yn">Yes</span></td>
         </tr>
         <tr>
           <th scope="row">Account and card management</th>
-          <td><span class="yn">Yes</span> <a href="#src-icici-2018">ICICI, 12 Jun 2018</a></td>
-          <td><span class="yn">Yes</span> My Accounts is on the reviewed home.</td>
-          <td><span class="yn">Yes</span> <a href="#src-hdfc-2018">Mint, 27 Nov 2018</a></td>
-          <td><span class="yn partial">Partial</span> Passbook on the reviewed home, not the full bank relationship.</td>
-          <td><span class="yn partial">Partial</span> <a href="#src-indiatoday-2019">India Today, 15 Mar 2019</a></td>
+          <td><span class="yn">Yes</span></td>
+          <td><span class="yn">Yes</span></td>
+          <td><span class="yn">Yes</span></td>
+          <td><span class="yn partial">Partial</span> Passbook, not the full bank relationship.</td>
+          <td><span class="yn partial">Partial</span></td>
         </tr>
         <tr>
           <th scope="row">Investments</th>
-          <td><span class="yn">Yes</span> <a href="#src-icici-2018">ICICI, 12 Jun 2018</a></td>
-          <td><span class="yn partial">Partial</span> e-Deposits on the reviewed home. Mutual funds in <a href="#src-indus-2019">Indus Net, Mar 2019</a>, are on YONO, a different app.</td>
-          <td><span class="yn partial">Partial</span> <a href="#src-hdfc-2018">Mint, 27 Nov 2018</a></td>
-          <td><span class="yn partial">Partial</span> <a href="#src-paytm-2017">TechPP, 23 Oct 2017</a></td>
-          <td><span class="yn na">Not on the screen I reviewed</span></td>
+          <td><span class="yn">Yes</span></td>
+          <td><span class="yn partial">Partial</span> e-Deposits. Mutual funds sit on YONO, a different app.</td>
+          <td><span class="yn partial">Partial</span></td>
+          <td><span class="yn partial">Partial</span></td>
+          <td><span class="yn na">—</span></td>
         </tr>
         <tr>
           <th scope="row">Personalization of the home screen</th>
-          <td><span class="yn">Yes</span> <a href="#src-icici-2018">ICICI, 12 Jun 2018</a></td>
-          <td><span class="yn na">Not on the screen I reviewed</span></td>
-          <td><span class="yn">Yes</span> <a href="#src-hdfc-2018">Mint, 27 Nov 2018</a></td>
-          <td><span class="yn na">Not on the screen I reviewed</span></td>
-          <td><span class="yn na">Not on the screen I reviewed</span></td>
+          <td><span class="yn">Yes</span></td>
+          <td><span class="yn na">—</span></td>
+          <td><span class="yn">Yes</span></td>
+          <td><span class="yn na">—</span></td>
+          <td><span class="yn na">—</span></td>
         </tr>
         <tr>
           <th scope="row">Navigation depth to common tasks</th>
@@ -496,21 +488,6 @@ h1,h2,h3,.cs-nav,.cs-nav a,.eyebrow,.tag,dt,th,.yn,.persona-label,.step b,.metri
       </tbody>
     </table>
     </div>
-    <p>Navigation depth describes the screens in this case. It is not a 2019 measurement. These items stay unresolved, because a 2019 source was not found: SBI Anywhere QR scan, biometric login, in-app search, and home personalization. A <a href="#src-sbi-bio-2018">Times of India report, 24 Aug 2018</a>, says SBI biometric login was still being procured. Also unresolved: HDFC QR scan, voice, and in-app search; Paytm voice, in-app search, and home personalization; Google Pay voice, in-app search, investments, and whether the contacts home was personalized.</p>
-    <h3>Sources</h3>
-    <ol class="sources">
-      <li id="src-icici-2018"><a href="https://www.icici.bank.in/about-us/article/news-icici-bank-completes-20-years-of-digital-banking-journey-the-bank-launches-revamped-imobile-with-many-industryfirst-features-20180612123039494">ICICI Bank, 12 June 2018</a>. Revamp note: UPI and bill payments, scan a QR code, voice-command transfer, Discover with spend patterns and suggestions, mutual-fund registration, and balance check.</li>
-      <li id="src-icici-fy2019"><a href="https://www.icicibank.com/ms/annual-report-microsite/strategic-focus-areas-for-business.html">ICICI Bank annual report, fiscal 2019</a>. iMobile revamped in fiscal 2019, with voice-command transfer and Discover.</li>
-      <li id="src-medianama-2017"><a href="https://www.medianama.com/2017/09/223-icici-bank-mobile-banking-fingerprint/">MediaNama, September 2017</a>. Android fingerprint login on iMobile.</li>
-      <li id="src-indus-2019"><a href="https://www.indusnet.co.in/site/wp-content/uploads/2019/03/Comparison-of-Mobile-Applications-of-Top-Indian-Banks.pdf">Indus Net, March 2019</a>. Comparison PDF: SBI Anywhere voice-assisted balance and transfer, and UPI trouble reports. Mutual funds are described on YONO.</li>
-      <li id="src-sbi-bio-2018"><a href="https://timesofindia.indiatimes.com/business/india-business/sbi-apps-to-have-multiple-modes-of-biometric-id/articleshow/65522501.cms">Times of India, 24 August 2018</a>. SBI said biometric login would come soon. The vendor was not final, so this is not evidence it was missing for all of 2019.</li>
-      <li id="src-hdfc-2018"><a href="https://www.livemint.com/Companies/r5aWmP55eR1U5uLSNnaCCI/HDFC-Bank-launches-new-mobile-banking-app-Top-5-features.html">Mint, 27 November 2018</a>. HDFC next-gen app: fingerprint and face login, bill notifications, Pay / Save / Invest, an asset snapshot, and personalized display. <a href="https://www.thehindubusinessline.com/money-and-banking/upgraded-version-of-hdfc-banks-mobile-banking-app-launched/article26571326.ece">BusinessLine, 18 March 2019</a>, reports the upgraded app was relaunched.</li>
-      <li id="src-paytm-2017"><a href="https://techpp.com/2017/10/23/paytm-tips-tricks/">TechPP, 23 October 2017</a>. Paytm fingerprint lock, UPI, bills and recharge, and digital gold.</li>
-      <li id="src-paytm-qr-2019"><a href="https://www.livemint.com/companies/start-ups/how-paytm-qr-codes-revolutionised-digital-payments-in-india-1564401824780.html">Mint, 29 July 2019</a>. Paytm QR, launched in 2015 and still in wide use.</li>
-      <li id="src-gpay-2018"><a href="https://india.googleblog.com/2018/08/google-pay-next-step-in-tez-journey.html">Google India blog, 28 August 2018</a>. Google Pay, formerly Tez, on UPI, with recharge and electricity-bill payment.</li>
-      <li id="src-tez-2017"><a href="https://india.googleblog.com/2017/09/introducing-tez-mobile-payments-and.html">Google India blog, 18 September 2017</a>. Tez access used the phone lock, which could be a fingerprint, plus a Google PIN.</li>
-      <li id="src-indiatoday-2019"><a href="https://www.indiatoday.in/information/story/how-to-use-google-pay-a-complete-guide-1478818-2019-03-15">India Today, 15 March 2019</a>. Google Pay QR scan, screen lock, and stored cards. This is not a full bank-account app.</li>
-    </ol>
   </div>
 </div></section>
 
